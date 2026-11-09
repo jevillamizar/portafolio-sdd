@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencias y build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Pruebas
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Firebase
+.firebase/
+
+# Editor y sistema
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
