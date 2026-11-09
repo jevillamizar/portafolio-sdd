@@ -1,0 +1,38 @@
+/* Tokens de diseño — fuente: docs/design.md */
+:root {
+  /* Color */
+  --bg: #f6f5fc;
+  --surface: #ffffff;
+  --surface-2: #efedf8;
+  --fg: #2b2a33;
+  --muted: #6b6880;
+  --accent: #4f35e1;
+  --accent-soft: #b9aef5;
+  --line: #e3e0f0;
+
+  /* Tipografía */
+  --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-xsmall: 0.75rem;
+  --leading-body: 1.7;
+  --eyebrow-tracking: 0.14em;
+
+  /* Layout */
+  --container-max: 1180px;
+  --gutter: 16px;
+  --section-gap: 64px;
+
+  /* Interacción */
+  --radius: 4px;
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 3px;
+  --transition: 150ms ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px;
+    --section-gap: 96px;
+  }
+}
