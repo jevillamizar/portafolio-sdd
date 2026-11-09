@@ -48,7 +48,8 @@ No entra: contenido real de las páginas (specs 001–004), plugin de contenido 
 8. **Pruebas e2e.** `tests/e2e/smoke.spec.ts`: las 4 rutas responden al cargar directo, hay un solo `h1`,
    la navbar enlaza a las rutas correctas (incluido `/#contacto`, sin exigir que exista el ancla todavía),
    el menú móvil abre y cierra en 390px, no hay scroll horizontal en 390px.
-> **Tareas 9 y 10 bloqueadas** hasta decidir Firebase o Vercel (ADR-002) y el dominio propio.
+> **Tareas 9 y 10:** hosting confirmado (Firebase). Requieren el nombre del sitio creado en
+> `docs/deploy.md` paso 2. El dominio propio no las bloquea (paso 6, después).
 
 9. **Firebase.** `firebase.json` y `.firebaserc` según `docs/deploy.md` (target `portafolio`).
 10. **Despliegue.** `.github/workflows/deploy.yml` según `docs/deploy.md`: instala, `check`, `test`, `build`,

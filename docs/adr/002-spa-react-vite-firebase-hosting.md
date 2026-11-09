@@ -1,9 +1,8 @@
 # ADR-002: SPA con React + Vite + React Router en Firebase Hosting
 
-**Estado:** aceptado (la SPA) · **pendiente** (el hosting: Firebase o Vercel) · **Fecha:** 2026-11-08 · **Reemplaza a:** ADR-001
+**Estado:** aceptado · **Fecha:** 2026-11-08 (hosting confirmado el 2026-11-09) · **Reemplaza a:** ADR-001
 
-> El hosting se decidirá antes de la tarea 9 del spec 000. La SPA no depende de él: solo cambian
-> `firebase.json` ↔ `vercel.json` y el paso de publicación del workflow. El sitio tendrá dominio propio.
+> Se evaluó Vercel y se confirmó Firebase Hosting. El sitio tendrá dominio propio, distinto del dominio del SaaS.
 
 ## Contexto
 El portafolio también es una muestra técnica: el dueño quiere que esté construido con React,
