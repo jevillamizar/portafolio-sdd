@@ -1,0 +1,119 @@
+{
+  "person": {
+    "fullName": "Jaime Esteban Villamizar Rojas",
+    "shortName": "Esteban Villamizar",
+    "title": "Desarrollador Full Stack | AI Engineer | DevOps",
+    "location": "Popayán, Colombia",
+    "email": "estebanvillamizar94@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/jevillamizar/",
+    "github": "https://github.com/jevillamizar"
+  },
+  "home": {
+    "eyebrow": "Hola, soy Esteban",
+    "titleLead": "Desarrollador Full Stack",
+    "titleAccent": "que construye plataformas seguras, escalables y con IA aplicada.",
+    "paragraphs": [
+      "Tengo 4 años de experiencia construyendo APIs y servicios backend con Python, Django y PostgreSQL, integraciones con servicios externos, procesamiento asíncrono con Celery y Redis, y arquitecturas orientadas a eventos con Apache Kafka.",
+      "Llevo aplicaciones a producción con Docker, AWS y Google Cloud Run, y he diseñado plataformas SaaS multi-tenant donde el aislamiento de datos entre clientes es un requisito, no un detalle. También he remediado vulnerabilidades de autorización (IDOR) en sistemas en producción.",
+      "Soy Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca. En mi trabajo de grado evalué algoritmos de 3D Gaussian Splatting para digitalizar piezas arqueológicas y las publiqué en un museo virtual web.",
+      "Trabajo con Spec-Driven Development y TDD apoyado en agentes de IA: cada cambio nace de un spec, se implementa tarea por tarea y pasa por una revisión crítica antes de llegar a producción."
+    ],
+    "contactTitle": "¿Trabajamos juntos?",
+    "contactText": "Estoy abierto a vacantes y proyectos de backend, plataformas SaaS y desarrollo full stack. Escríbeme y te respondo pronto."
+  },
+  "profile": "Desarrollador Full Stack con 4 años de experiencia construyendo APIs y servicios backend con Python (Django/DRF) y PostgreSQL, integraciones con servicios externos y procesamiento de datos asíncrono (Celery/Redis) y orientado a eventos (Apache Kafka). Ingeniero en Electrónica y Telecomunicaciones con experiencia en producción con AWS (S3, IAM, RDS), Docker y CI/CD, además de migraciones de bases de datos y seguridad de aplicaciones. Aplico Spec-Driven Development y TDD con agentes de IA para entregar más rápido y reducir regresiones.",
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "GPSTalent | Alfa Ingenieros",
+      "start": "2026-06",
+      "end": "2026-10",
+      "period": "Jun 2026 – Oct 2026",
+      "mode": "Tiempo completo",
+      "bullets": [
+        "Diseñé esquemas y gestioné migraciones de base de datos, con consultas y mantenimiento directo usando DBeaver y consola, garantizando integridad y eficiencia de los datos.",
+        "Implementé autenticación y control de acceso con permisos y roles para 4 tipos de usuario.",
+        "Remedié un incidente crítico de seguridad (IDOR) que exponía datos personales, cerrando más de 5 brechas de autorización y migrando permisos basados en IDs hardcodeados a un patrón de autorización independiente del ambiente.",
+        "Rediseñé el módulo de cargue masivo de datos (contratos, nómina, seguridad social) con reporte de errores por fila y detección automática de empleados por nombre de archivo, eliminando procesos manuales de RRHH.",
+        "Contenericé la aplicación con Docker en entorno Linux (consola y SSH), sirviendo a más de 500 clientes.",
+        "Implementé las interfaces en Vue.js (login, perfiles, componentes condicionales) integradas con los nuevos endpoints."
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Group FullStack SAS",
+      "start": "2025-01",
+      "end": "2026-02",
+      "period": "Ene 2025 – Feb 2026",
+      "mode": "Tiempo completo",
+      "bullets": [
+        "Implementé una arquitectura orientada a eventos con Apache Kafka en la plataforma de vuelos ForeverFly: Laravel publica el evento «FlightPurchased» y servicios independientes lo consumen (pagos, notificaciones por correo, analítica y generación de documentos PDF), desacoplando el flujo de compra.",
+        "Desarrollé más de 12 APIs REST Laravel que integraban servicios externos (Amadeus), con caché distribuido y circuit breakers, manteniendo un 99.9% de disponibilidad.",
+        "Diseñé y optimicé esquemas en PostgreSQL: migraciones, índices, particionamiento de tablas de transacciones históricas y réplicas de lectura para descargar consultas pesadas.",
+        "Diseñé un sistema distribuido (usuarios, pagos y administración) con interfaz en React + TypeScript, reduciendo errores en tiempo de ejecución en un 25%.",
+        "Documenté APIs con OpenAPI/Swagger, con autenticación JWT y autorización basada en roles.",
+        "Construí más de 20 componentes reutilizables en React/TypeScript, acelerando el desarrollo frontend.",
+        "Apliqué principios SOLID, arquitectura por capas, pruebas unitarias y entrega continua para despliegues más seguros."
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Hops Group SAS",
+      "start": "2023-07",
+      "end": "2026-05",
+      "period": "Jul 2023 – May 2026",
+      "mode": "Medio tiempo",
+      "bullets": [
+        "Desarrollé y mantuve APIs RESTful con Python, Django y Django REST Framework: lógica de negocio, validaciones y serialización de datos para el consumo del frontend.",
+        "Implementé procesamiento asíncrono con Celery y Redis para generación de informes complejos (PDF/Excel), registros de actividad masivos, ciclos de facturación periódicos, notificaciones por correo masivas y sincronización de datos con sistemas externos.",
+        "Utilicé servicios de AWS (S3, IAM, RDS, entre otros) para la infraestructura de la aplicación en producción."
+      ]
+    },
+    {
+      "role": "Desarrollador Frontend (React)",
+      "company": "Asociación Allpamama Wawakuna",
+      "start": "2022-06",
+      "end": "2023-06",
+      "period": "Jun 2022 – Jun 2023",
+      "mode": "Contrato",
+      "bullets": [
+        "Desarrollé el sitio web corporativo de la organización con React, componentes reutilizables y diseño responsive.",
+        "Traduje prototipos de Figma a código funcional e integré el frontend con APIs backend existentes."
+      ]
+    }
+  ],
+  "projects": [
+    { "slug": "plataforma-clinicas", "name": "Plataforma SaaS de agendamiento y gestión clínica", "period": "2025 – 2026", "status": "En producción", "line": "Multi-tenant por schema con Django y django-tenants, historia clínica y consentimiento firmado, desplegada en Google Cloud Run." },
+    { "slug": "teiot-telemetria-iot", "name": "TEIOT: plataforma multi-tenant de telemetría IoT", "period": "2026", "status": "En desarrollo", "line": "NestJS, PostgreSQL con Row-Level Security, MQTT 5 con Mosquitto, web en React y app en React Native." },
+    { "slug": "tesis-gaussian-splatting", "name": "Reconstrucción 3D con 3D Gaussian Splatting y Museo Virtual", "period": "Mar 2026", "status": "Finalizado", "line": "Trabajo de grado: pipeline de reconstrucción con COLMAP y PyTorch, y visor web con Three.js y Leaflet." }
+  ],
+  "skills": [
+    { "category": "Backend", "items": ["Python", "Django", "Django REST Framework", "Celery", "APIs REST", "Integración de APIs externas", "Microservicios", "PHP / Laravel", "Node.js", "NestJS"] },
+    { "category": "Bases de datos", "items": ["PostgreSQL (migraciones, índices, particionamiento, réplicas de lectura, optimización)", "MySQL", "MongoDB"] },
+    { "category": "Datos y mensajería", "items": ["Celery + Redis", "Apache Kafka", "Tareas asíncronas", "Reportes masivos PDF/Excel", "Sincronización con sistemas externos", "MQTT"] },
+    { "category": "Nube y DevOps", "items": ["AWS (S3, IAM, RDS)", "Google Cloud Run", "Docker", "Linux / SSH", "Git", "CI/CD"] },
+    { "category": "Frontend", "items": ["React", "TypeScript", "Vue.js", "Angular", "React Native"] },
+    { "category": "IA y visión por computador", "items": ["3D Gaussian Splatting", "PyTorch", "COLMAP", "Métricas PSNR, SSIM y LPIPS", "Spec-Driven Development con agentes de IA (Claude Code)"] },
+    { "category": "Seguridad", "items": ["OWASP Top 10", "Control de acceso y autorización", "JWT", "Prácticas de código seguro"] },
+    { "category": "Metodologías y calidad", "items": ["Scrum", "Kanban", "TDD", "Pruebas unitarias"] }
+  ],
+  "education": [
+    {
+      "degree": "Ingeniería Electrónica y Telecomunicaciones",
+      "institution": "Universidad del Cauca, Popayán, Colombia",
+      "year": "2026",
+      "thesis": "Representación de escenas 3D basada en 3D Gaussian Splatting aplicada al modelado 3D de objetos arqueológicos",
+      "thesisSlug": "tesis-gaussian-splatting"
+    }
+  ],
+  "certifications": [
+    { "name": "Penetration Testing, Threat Hunting, and Cryptography", "issuer": "Coursera, autorizado por IBM", "date": "Dic 2025" },
+    { "name": "Complete React Developer (w/ Redux, Hooks, GraphQL)", "issuer": "Udemy", "date": "Abr 2023" },
+    { "name": "Master in Frameworks JavaScript: Angular, React, Vue", "issuer": "Udemy", "date": "Nov 2022" },
+    { "name": "Scrum Fundamentals Certified (SFC)", "issuer": "SCRUMstudy", "date": "Feb 2022" }
+  ],
+  "languages": [
+    { "name": "Español", "level": "Nativo" },
+    { "name": "Inglés", "level": "Intermedio (B1): lectura de documentación técnica y comunicación en contextos laborales básicos" }
+  ]
+}
