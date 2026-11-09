@@ -84,6 +84,15 @@ a {
   padding-inline: var(--gutter);
 }
 
+/* Página: aire vertical bajo la navbar */
+.page {
+  padding-block: 48px;
+}
+
+.page > * + * {
+  margin-top: 16px;
+}
+
 /* Eyebrow */
 .eyebrow {
   color: var(--muted);
