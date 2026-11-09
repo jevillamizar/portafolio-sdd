@@ -1,0 +1,104 @@
+/* Navbar — docs/design.md: sin fondo ni sombra, solo espacio */
+.site-header {
+  position: relative;
+  padding-block: 24px;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-header__logo {
+  color: var(--accent);
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav__link {
+  color: var(--fg);
+  font-size: var(--text-small);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.site-nav__link:hover,
+.site-nav__link[aria-current='page'] {
+  color: var(--accent);
+}
+
+/* Botón de menú: dos líneas, la segunda más corta */
+.site-nav__toggle {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  width: 44px;
+  height: 44px;
+  padding: 10px 6px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.site-nav__toggle-line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition);
+}
+
+.site-nav__toggle-line--short {
+  width: 20px;
+}
+
+.site-nav[data-open='true'] .site-nav__toggle-line--short {
+  width: 32px;
+}
+
+/* Móvil: los enlaces se ocultan tras el botón */
+@media (max-width: 767.98px) {
+  .site-nav__toggle {
+    display: flex;
+  }
+
+  .site-nav__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: var(--gutter);
+    right: var(--gutter);
+    z-index: 50;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+
+  .site-nav[data-open='true'] .site-nav__list {
+    display: flex;
+  }
+
+  .site-nav__link {
+    display: block;
+    padding: 12px 20px;
+    font-size: var(--text-body);
+  }
+}
